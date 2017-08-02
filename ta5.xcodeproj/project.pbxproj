@@ -12,9 +12,12 @@
 		AB1EF6871F1EEA7700BD2A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1EF6851F1EEA7700BD2A4B /* Main.storyboard */; };
 		AB1EF6891F1EEA7700BD2A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1EF6881F1EEA7700BD2A4B /* Assets.xcassets */; };
 		AB1EF68C1F1EEA7700BD2A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1EF68A1F1EEA7700BD2A4B /* LaunchScreen.storyboard */; };
+		F3C2AB739717C79E3CF44175 /* Pods_ta5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B4F7ABA8059E5D88DFE092 /* Pods_ta5.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19B4F7ABA8059E5D88DFE092 /* Pods_ta5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ta5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA8348D836D98F9566A7C37 /* Pods-ta5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ta5.release.xcconfig"; path = "Pods/Target Support Files/Pods-ta5/Pods-ta5.release.xcconfig"; sourceTree = "<group>"; };
 		AB1EF67E1F1EEA7700BD2A4B /* ta5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ta5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1EF6811F1EEA7700BD2A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB1EF6831F1EEA7700BD2A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		AB1EF6881F1EEA7700BD2A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1EF68B1F1EEA7700BD2A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB1EF68D1F1EEA7700BD2A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF488C8F5D902C21645BE2A7 /* Pods-ta5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ta5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ta5/Pods-ta5.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C2AB739717C79E3CF44175 /* Pods_ta5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0965631AF16311F620E8A6E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19B4F7ABA8059E5D88DFE092 /* Pods_ta5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33DE60BF377EBC340DA3B82A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF488C8F5D902C21645BE2A7 /* Pods-ta5.debug.xcconfig */,
+				1AA8348D836D98F9566A7C37 /* Pods-ta5.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB1EF6751F1EEA7700BD2A4B = {
 			isa = PBXGroup;
 			children = (
 				AB1EF6801F1EEA7700BD2A4B /* ta5 */,
 				AB1EF67F1F1EEA7700BD2A4B /* Products */,
+				33DE60BF377EBC340DA3B82A /* Pods */,
+				0965631AF16311F620E8A6E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB1EF6901F1EEA7700BD2A4B /* Build configuration list for PBXNativeTarget "ta5" */;
 			buildPhases = (
+				6121820139162F066BC42BBB /* [CP] Check Pods Manifest.lock */,
 				AB1EF67A1F1EEA7700BD2A4B /* Sources */,
 				AB1EF67B1F1EEA7700BD2A4B /* Frameworks */,
 				AB1EF67C1F1EEA7700BD2A4B /* Resources */,
+				9C57C2C553BCB77D0801DD6B /* [CP] Embed Pods Frameworks */,
+				D141B5F866946468D342012A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6121820139162F066BC42BBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C57C2C553BCB77D0801DD6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ta5/Pods-ta5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D141B5F866946468D342012A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ta5/Pods-ta5-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB1EF67A1F1EEA7700BD2A4B /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		AB1EF6911F1EEA7700BD2A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF488C8F5D902C21645BE2A7 /* Pods-ta5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ta5/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		AB1EF6921F1EEA7700BD2A4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA8348D836D98F9566A7C37 /* Pods-ta5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ta5/Info.plist;
