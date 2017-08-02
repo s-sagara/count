@@ -36,6 +36,13 @@ class ViewController: UIViewController {
         label.text = String(number)
     }
     
+    @IBAction func multiple(){
+    
+        number = number*2
+        label.text = String(number)
+    
+    }
+    
     
     @IBAction func clear(){
         
